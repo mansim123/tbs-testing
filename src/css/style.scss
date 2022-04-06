@@ -1,8 +1,34 @@
 // styles
+
+body {
+    padding:0px;
+    margin:0px;
+    background-color: #ffffff;
+    h1 {
+        font-size:5.5rem;
+        font-family: "Work Sans", sans-serif;
+        font-weight: bold;
+    }
+    h2 {
+        font-size:3rem;
+        font-family: "Work Sans", sans-serif;
+        font-weight: bold;
+    }
+    h3 {
+        font-size:2.5rem;
+        letter-spacing:-0.4px;
+        font-family: "Work Sans", sans-serif;
+        font-weight: bold;
+    }
+    p {
+        font-size:1rem;
+        line-height: 24px;
+    }
+}
+
 .pageStyles{
     color: #232129;
-    padding: 96px;
-    font-family: "-apple-system, Roboto, sans-serif, serif";
+    font-family: "Work Sans", sans-serif;
         .headingStyles{
             margin-top: 0px;
             margin-bottom: 64px;
@@ -39,3 +65,63 @@
             }
         }
   }
+
+  /* --------------- HEADER STYLE -------------- */
+
+  .headerContainer {
+      background-color:#000000;
+      padding:1rem 0rem;
+      .BeSeenBeHeard img{
+          display:block;
+          margin:auto;
+      }
+  }
+
+  /* --------------- HERO STYLE -------------- */
+
+  .heroContainer {
+    padding:0rem 0rem;
+    .BeSeenBeHeard img{
+        display:block;
+        margin:auto;
+    }
+
+    .heroCopyContainer {
+        position: absolute;
+        .heroCopyBlack {
+            background-color: #000000;
+        }
+        h1 {
+            color: #ffffff;
+            padding:0rem 1rem;
+            margin:0px;
+            text-align: center;
+        }
+        h2 {
+            padding-top:5px;
+            color: #000000;
+            padding:0rem 1rem;
+            margin:0px;
+            text-align: center;
+            line-height: 48px;
+        }
+    }
+
+    .heroSubCopyContainer {
+        background-color: #000000;
+        h3 {
+            color: #ffffff;
+            padding: 1.5rem 0rem 0rem 0rem;
+            margin:0px;
+            text-align: center;
+        }
+        p {
+            color: #ffffff;
+            padding:1rem 5rem 1.5rem 5rem;
+            margin:0px;
+            text-align: center;
+        }
+    }
+}
+
+ /* --------------- HERO STYLE -------------- */

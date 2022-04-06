@@ -1,11 +1,15 @@
 import * as React from "react"
 import "../css/style.scss";
+import HeaderSection from '../components/header';
+import HeroSection from '../components/hero';
 import Button from '@mui/material/Button';
 
 // markup
 const IndexPage = () => {
   return (
     <main className="pageStyles">
+      <HeaderSection></HeaderSection>
+      <HeroSection></HeroSection>
       <title>Home Page</title>
       <h1 className="headingStyles">
         Congratulations
