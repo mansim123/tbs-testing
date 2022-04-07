@@ -7,12 +7,7 @@ const HeroSection = () => {
   return (
     <main>
       <Container className="heroContainer" maxWidth={false}>
-        <div
-          style={{
-            placeItems: "center",
-            display: "grid",
-          }}
-        >
+        <div style={{ placeItems: "center", display: "grid", }}>
           <StaticImage
             className="heroImage0"
             src="../images/heroImage0.jpg"
@@ -21,12 +16,7 @@ const HeroSection = () => {
           />
         </div>
 
-        <div
-          style={{
-            placeItems: "center",
-            display: "grid",
-          }}
-        >
+        <div style={{ placeItems: "center", display: "grid", }}>
           <StaticImage
             className="heroImageFiller"
             src="../images/heroImageFiller.jpg"
@@ -44,12 +34,7 @@ const HeroSection = () => {
           </div>
         </div>
 
-        <div
-          style={{
-            placeItems: "center",
-            display: "grid",
-          }}
-        >
+        <div style={{ placeItems: "center", display: "grid", }}>
           <StaticImage
             className="heroImage1"
             src="../images/heroImage1.jpg"
@@ -59,12 +44,7 @@ const HeroSection = () => {
         </div>
 
         <Container className="heroContainer" sx={{maxWidth:'1440px;'}} maxWidth={false} disableGutters={true} >
-          <div
-            style={{
-              placeItems: "center",
-              display: "grid",
-            }}
-          >
+        <div style={{ placeItems: "center", display: "grid", }}>
             <div className="heroSubCopyContainer">
               <h3>
                 Young People Are Missing From Public Life, They<br></br>

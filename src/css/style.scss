@@ -20,9 +20,25 @@ body {
         font-family: "Work Sans", sans-serif;
         font-weight: bold;
     }
+    h4 {
+        font-size:2rem;
+        letter-spacing:-0.4px;
+        font-family: "Work Sans", sans-serif;
+        font-weight: bold;
+        margin:0px;
+    }
     p {
         font-size:1rem;
         line-height: 24px;
+    }
+    .pad-top-1rem {
+        padding-top:1rem;
+    }
+    .pad-top-2rem {
+        padding-top:2rem;
+    }
+    .pad-top-3rem {
+        padding-top:3rem;
     }
 }
 
@@ -124,4 +140,26 @@ body {
     }
 }
 
- /* --------------- HERO STYLE -------------- */
+ /* --------------- MAIN STYLE -------------- */
+
+ .introContainer {
+     .introCopy, h3{
+         padding: 0rem 2rem 0rem 2rem;
+     }  
+ }
+
+ .introImage2 {
+    float:right;
+}
+
+.pinkBoxContainer{
+    .mainPinkBox{
+        background-color: #ebbede;
+        padding:2rem;
+        font-size:1.4rem;
+    }
+    h4{
+        padding:2rem 0rem;
+    }
+}
+

@@ -10,12 +10,14 @@ const config: GatsbyConfig = {
   `gatsby-plugin-sharp`,
   `gatsby-transformer-sharp`,
   {
-    resolve: `gatsby-plugin-google-fonts`,
+    resolve: `gatsby-plugin-google-fonts-v2`,
     options: {
       fonts: [
-        `work sans`
-      ],
-      display: 'swap'
+        {
+          family: 'Work Sans',
+          weights: ['400', '700', '800', '900']
+        }
+      ]
     }
   }
 ],
