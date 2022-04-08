@@ -8614,7 +8614,7 @@ const MainSection = () => {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", null, "What We Are", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "Advocating For"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
     className: "introCopy"
   }, "To advance the needs and rights of young people, and ensure youth voices are meaningfully heard within public life and decision making, the Be Seen. Be Heard campaign is focused on supporting efforts that promote policy and legislation change."))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    className: "introContainer",
+    className: "pinkBoxContainer",
     sx: {
       maxWidth: '1080px;'
     },
@@ -8637,19 +8637,51 @@ const MainSection = () => {
     xs: 6
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "mainPinkBox"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("b", null, "Lowering the voting age for local, municipal or national elections:"), "enfranchising youth voters earlier by implementing comprehensive civic education programmes for youth.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("b", null, "Removing systemic barriers for young people to participate in public life: "), "challenging legal, social and cultural barriers that obstruct youth voting, candidacy or decision-making presence.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material__WEBPACK_IMPORTED_MODULE_3__["default"], {
     className: "",
     item: true,
     xs: 6
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "mainPinkBox"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("b", null, "Lowering the voting age for local, municipal or national elections:"), "enfranchising youth voters earlier by implementing comprehensive civic education programmes for youth.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("b", null, "Increasing youth representation through the establishment and recognition of formal youth bodies: "), "ensuring enhanced representation through youth councils, parliaments or committees.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material__WEBPACK_IMPORTED_MODULE_3__["default"], {
     className: "",
     item: true,
     xs: 6
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "mainPinkBox"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("b", null, "Lowering the voting age for local, municipal or national elections:"), "enfranchising youth voters earlier by implementing comprehensive civic education programmes for youth.")))));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("b", null, "Amplifying young people's leadership in policy development: "), "ensuring there is a meaningful, accountable and long-term youth voice present in key policy-making spaces.")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    className: "pad-top-1rem",
+    sx: {
+      maxWidth: '1440px;'
+    },
+    maxWidth: false,
+    disableGutters: true
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    container: true,
+    spacing: 2,
+    alignItems: "center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    item: true,
+    xs: 4
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__.StaticImage, {
+    className: "introImage2",
+    src: "../images/introImage2.jpg",
+    alt: "Intro image 2",
+    placeholder: "blurred",
+    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/3095276906.json */ "./.cache/caches/gatsby-plugin-image/3095276906.json")
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    item: true,
+    xs: 8
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    className: "introContainer",
+    sx: {
+      maxWidth: '810px;'
+    },
+    maxWidth: false,
+    disableGutters: true
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", null, "Young People\u2019s Political", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "Participation"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
+    className: "introCopy"
+  }, "Too often, young people are misunderstood as being apathetic or uninterested in civic, social and political issues. Yet even in the face of adversity and facing structural barriers, young people are continually stepping up as advocates, entrepreneurs and innovators who are leading change in their communities and holding decision-makers to account. Young people\u2019s actions and unapologetic advocacy have moved the dial on diverse political issues, from climate change and mental health, to corruption and gender, to racism and socio-economic inequality. However, while youth-led movements around the world have gained increasing momentum, we continue to see gaps when it comes to the engagement of young people in formal politics because of a variety of structural and cultural barriers which prevent them from fulfilling their right to participate in public life.")))));
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (MainSection);

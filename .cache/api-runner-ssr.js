@@ -1,11 +1,11 @@
 var plugins = [{
       name: 'gatsby-plugin-image',
-      plugin: require('/Users/manuelyemoh/Desktop/tbs/tbs-testing/node_modules/gatsby-plugin-image/gatsby-ssr.js'),
+      plugin: require('C:/Users/M_War/Desktop/Main/Tbs_un/tbs-testing/node_modules/gatsby-plugin-image/gatsby-ssr.js'),
       options: {"plugins":[]},
     },{
       name: 'gatsby-plugin-google-fonts-v2',
-      plugin: require('/Users/manuelyemoh/Desktop/tbs/tbs-testing/node_modules/gatsby-plugin-google-fonts-v2/gatsby-ssr.js'),
-      options: {"plugins":[],"fonts":[{"family":"JetBrains Mono","weights":["100","400"]},{"family":"Roboto Mono","weights":["100..400"]}]},
+      plugin: require('C:/Users/M_War/Desktop/Main/Tbs_un/tbs-testing/node_modules/gatsby-plugin-google-fonts-v2/gatsby-ssr.js'),
+      options: {"plugins":[],"fonts":[{"family":"Work Sans","weights":["400","700","800","900"]}]},
     }]
 /* global plugins */
 // During bootstrap, we write requires at top of this file which looks like:
