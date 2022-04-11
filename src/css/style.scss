@@ -146,6 +146,23 @@ body {
      .introCopy, h3{
          padding: 0rem 2rem 0rem 2rem;
      }  
+     .yellowBoxCont {
+         position: relative;
+         
+         .yellowCopyContainer {
+            position: absolute;
+            padding-top: 3rem;
+            .yellowCopyYellowBox {
+                background-color: #d6ce4b;
+                padding: 3rem 5rem;
+                p {
+                    text-align: center;
+                }
+            }
+           
+         }
+     }
+    
  }
 
  .introImage2 {
@@ -163,3 +180,63 @@ body {
     }
 }
 
+.statsContainer {
+    h4 {
+        padding-left:6rem;
+    }
+    .mainCopyBlack {
+        .firstStat, .secondStat {
+            background-color: #000000;
+            color:#ffffff;
+            text-align: center;
+            width: 14rem;
+            position: relative;
+            margin: 0 auto;
+        }
+
+        .thirdStat {
+            background-color: #000000;
+            color:#ffffff;
+            text-align: center;
+            width: 20rem;
+            position: relative;
+            margin: 0 auto;
+        }
+        p {
+            text-align: center;
+            font-size:1.4rem;
+            font-weight: bold;
+        }
+    }
+}
+
+.introContainer {
+    .introCopy, h3{
+        padding: 0rem 2rem 0rem 2rem;
+    }  
+    .ctaBoxCont {
+        position: relative;
+        
+        .ctaCopyContainer {
+           position: absolute;
+           padding-top: 3rem;
+           .ctaCopyWhiteBox {
+               background-color: #ffffff;
+               padding: 3rem 2.7rem;
+               p {
+                   text-align: center;
+               }
+           }
+          
+        }
+    }
+   
+}
+
+.keyFindingsSection {
+    h5 {
+        font-size:1.4rem;
+        font-weight: bold;
+        margin-bottom:0px;
+    }
+}

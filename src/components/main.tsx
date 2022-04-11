@@ -1,7 +1,19 @@
 import * as React from "react";
 import "../css/style.scss";
-import { Container, Grid } from "@mui/material";
+import { Container, Grid, Button } from "@mui/material";
 import { StaticImage } from "gatsby-plugin-image";
+import { createTheme, ThemeProvider  } from '@mui/material/styles';
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#ebbede',
+    },
+    secondary: {
+      main: '#f44336',
+    },
+  },
+});
 
 const MainSection = () => {
   return (
@@ -36,13 +48,22 @@ const MainSection = () => {
         </Grid>
       </Container>
       <Container className="introContainer" sx={{ maxWidth: '1440px;' }} maxWidth={false} disableGutters={true}>
-      <div className="pad-top-3rem" style={{ placeItems: "center", display: "grid", }}>
+        <div className="pad-top-3rem yellowBoxCont" style={{ placeItems: "center", display: "grid", }}>
           <StaticImage
             className="introImage1"
             src="../images/introImage1.jpg"
             alt="Intro image 1"
             placeholder="blurred"
           />
+          <div className="yellowCopyContainer">
+            <div className="yellowCopyYellowBox">
+              <p>
+                  The campaign's key objective is to change one piece of legislation or policy, or support<br></br>
+                  programming to promote youth participation in public life, in more than <u>80 countries<br></br>
+                  around the world</u> where The Body Shop operates.
+              </p>
+            </div>
+          </div>
         </div>
       </Container>
       <Container className="pad-top-1rem" sx={{ maxWidth: '1440px;' }} maxWidth={false} disableGutters={true}>
@@ -133,38 +154,183 @@ const MainSection = () => {
           </Grid>
       </Grid>
       </Container>
-      <Container className="pad-top-1rem" sx={{ maxWidth: '1440px;' }} maxWidth={false} disableGutters={true}>
+      <Container className="pad-top-3rem" sx={{ maxWidth: '1225px;' }} maxWidth={false} disableGutters={true}>
         <Grid container spacing={2} alignItems="center">
           
           <Grid item xs={4}>
             <StaticImage
-              className="introImage2"
-              src="../images/introImage2.jpg"
-              alt="Intro image 2"
+              className="introImage4"
+              src="../images/introImage4.jpg"
+              alt="Intro image 4"
               placeholder="blurred"
             />
           </Grid>
-        </Grid>
-        <Grid item xs={8}>
-          <Container className="introContainer" sx={{ maxWidth: '810px;' }} maxWidth={false} disableGutters={true}>
+          <Grid item xs={8}>
+          <Container className="introContainer" sx={{ maxWidth: '700px;' }} maxWidth={false} disableGutters={true}>
             <h3>
-              Young People’s Political<br></br>
-              Participation
+              Global Youth Report
             </h3>
             <p className="introCopy">
-              Too often, young people are misunderstood as being apathetic or uninterested in civic, social
-              and political issues. Yet even in the face of adversity and facing structural barriers, young
-              people are continually stepping up as advocates, entrepreneurs and innovators who are leading
-              change in their communities and holding decision-makers to account. Young people’s actions and
-              unapologetic advocacy have moved the dial on diverse political issues, from climate change and
-              mental health, to corruption and gender, to racism and socio-economic inequality. However, while
-              youth-led movements around the world have gained increasing momentum, we continue to see gaps
-              when it comes to the engagement of young people in formal politics because of a variety of
-              structural and cultural barriers which prevent them from fulfilling their right to participate
-              in public life.
+              Did you know that 67% of people believe in a better future, with 15 to 17-year-olds
+              being the most optimistic? Or that more than two-thirds (69%) of people agree
+              political systems would be better if there were more opportunities for younger
+              people to have a say in policy development and change? 
+              <br></br><br></br>
+              The global youth report, Be Seen. Be Heard: Understanding Young People’s Political
+              Participation, unpacks the structural barriers young people face in accessing their
+              right to pollical participation and explores how we can all contribute to removing
+              such barriers. It examines the ways in which young people are already engaging
+              and contributing to our world, while also interrogating the basis for their exclusion. 
             </p>
           </Container>
           </Grid>
+        </Grid>
+      </Container>
+      <Container className="pad-top-3rem statsContainer" sx={{ maxWidth: '1275px;' }} maxWidth={false} disableGutters={true}>
+        <h4>Key findings: </h4>
+        <Grid className="pad-top-3rem" container spacing={2} alignItems="center">
+          <Grid item xs={4}>
+            <div className="mainCopyBlack">
+              <h1 className="firstStat">76%</h1>
+            </div>
+          </Grid>
+          <Grid item xs={4}>
+            <div className="mainCopyBlack">
+              <h1 className="secondStat">69%</h1>
+            </div>
+          </Grid>
+          <Grid item xs={4}>
+            <div className="mainCopyBlack">
+              <h1 className="thirdStat">8 in 10</h1>
+            </div>
+          </Grid>
+        </Grid>
+        <Grid className="" container spacing={2} alignItems="top">
+          <Grid item xs={4}>
+            <div className="mainCopyBlack">
+                <p>
+                  of under 30s think politicians<br></br>
+                  don’t listen to young people.
+                </p>
+            </div>
+          </Grid>
+          <Grid item xs={4}>
+            <div className="mainCopyBlack">
+              <p>
+                of people think that more<br></br>
+                opportunities for younger<br></br>
+                people to have a say in policy<br></br>
+                development would make<br></br>
+                political systems better.
+              </p>
+            </div>
+          </Grid>
+          <Grid item xs={4}>
+            <div className="mainCopyBlack">
+              <p>
+                people think that current<br></br>
+                political systems need drastic<br></br>
+                reforms to be fit for the future.
+              </p>
+            </div>
+          </Grid>
+        </Grid>
+      </Container>
+      <Container className="introContainer" sx={{ maxWidth: '1440px;' }} maxWidth={false} disableGutters={true}>
+        <div className="pad-top-3rem ctaBoxCont" style={{ placeItems: "center", display: "grid", }}>
+          <StaticImage
+            className="introImage5"
+            src="../images/introImage5.jpg"
+            alt="Intro image 5"
+            placeholder="blurred"
+          />
+          <div className="ctaCopyContainer">
+            <div className="ctaCopyWhiteBox">
+              <p>
+                Through substantiating the issue and offering concrete recommendations for policy and<br></br>
+                legislative improvements, the report provides a strong basis for local advocacy efforts<br></br>
+                which seek to defend and advance the needs and rights of young people in all their diversity. 
+              </p>
+              <div className="" style={{ placeItems: "center", display: "grid", }}>
+              <ThemeProvider theme={theme}>
+                <Button target="_blank" href="https://www.google.co.uk" variant="contained" color="primary" disableElevation>Read the full report</Button>
+              </ThemeProvider>
+              </div>
+              <div className="pad-top-1rem" style={{ placeItems: "center", display: "grid", }}>
+              <ThemeProvider theme={theme}>
+                <Button target="_blank" href="https://www.google.co.uk" variant="contained" color="primary" disableElevation>Read the summary</Button>
+              </ThemeProvider>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Container>
+      <Container className="pad-top-3rem keyFindingsSection" sx={{ maxWidth: '1225px;' }} maxWidth={false} disableGutters={true}>
+        <Grid container spacing={2} alignItems="center">
+          
+          <Grid item xs={12}>
+          <h4>Key findings: </h4>
+          </Grid>
+        </Grid>
+        <Grid container spacing={2} alignItems="top">
+          
+          <Grid item xs={5}>
+            <h5>The Office of the UN<br></br>
+              Secretary-General’s Envoy on Youth
+            </h5>
+            <p>
+              In 2017, the UN Secretary-General appointed Jayathma
+              Wickramanayake of Sri Lanka as his Special Envoy on
+              Youth and as the youngest senior official in the history
+              of the organization. Ms. Wickramanayake's mandate is
+              to harmonize the UN system efforts on youth
+              development, enhance the UN response to youth
+              needs, advocate for the development needs and rights
+              of young people, as well as to bring the work of the
+              United Nations on youth closer to them. The Envoy on
+              Youth also acts as the advisor to and the representative
+              of the Secretary-General on youth related matters.
+              <br></br><br></br>
+              For more information, follow @UNYouthEnvoy on social
+              media and visit our website at <a href="https://www.un.org/youthenvoy/" target="_blank">un.org/youthenvoy.</a>
+              <div className="pad-top-2rem">
+              <StaticImage
+                className="unLogo"
+                src="../images/unLogo.png"
+                alt="Un Logo"
+                placeholder="blurred"
+              />
+              </div>
+            </p>
+          </Grid>
+          <Grid item xs={1}></Grid>
+          <Grid item xs={5}>
+            <h5>
+              About The Body Shop
+            </h5>
+            <p>
+            At The Body Shop we seek to create change where and
+            when we believe it is needed. We have always operated
+            outside of the beauty industry, going beyond to
+            address change where other brands don’t go. We are
+            not afraid to challenge the status quo to find the right
+            solutions. We have a vast and successful history of
+            activism and campaigning, from Save the Whales to
+            Stop the Burning and Stop Sex Trafficking. 
+            <br></br><br></br>
+            Campaigning for change is in our heritage. It’s what we
+            do. Find out more by visiting <a href="https://www.thebodyshop.com/" target="_blank">thebodyshop.com.</a>
+            </p>
+            <div className="pad-top-2rem">
+              <StaticImage
+                className="tbsLog"
+                src="../images/tbsLogo.png"
+                alt="tbs Logo"
+                placeholder="blurred"
+              />
+              </div>
+          </Grid>
+        </Grid>
       </Container>
     </main>
   );
