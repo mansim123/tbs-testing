@@ -68,8 +68,8 @@ const MainSection = () => {
       </Container>
       <Container className="pad-top-1rem" sx={{ maxWidth: '1440px;' }} maxWidth={false} disableGutters={true}>
         <Grid container spacing={2} alignItems="center">
-          <Grid item xs={8}>
-          <Container className="introContainer" sx={{ maxWidth: '810px;' }} maxWidth={false} disableGutters={true}>
+          <Grid item xs={7}>
+          <Container className="introContainer" sx={{ maxWidth: '685px;' }} maxWidth={false} disableGutters={true}>
             <h3>
               Young People’s Political<br></br>
               Participation
@@ -88,7 +88,7 @@ const MainSection = () => {
             </p>
           </Container>
           </Grid>
-          <Grid item xs={4}>
+          <Grid className="introImage2Cont" item xs={5}>
             <StaticImage
               className="introImage2"
               src="../images/introImage2.jpg"
@@ -269,7 +269,7 @@ const MainSection = () => {
         <Grid container spacing={2} alignItems="center">
           
           <Grid item xs={12}>
-          <h4>Key findings: </h4>
+          <h4>About the Partners  </h4>
           </Grid>
         </Grid>
         <Grid container spacing={2} alignItems="top">
