@@ -15,10 +15,11 @@ body {
         font-weight: bold;
     }
     h3 {
-        font-size:2.5rem;
+        font-size:2.75rem;
         letter-spacing:-0.4px;
         font-family: "Work Sans", sans-serif;
         font-weight: bold;
+        margin-bottom:0px;
     }
     h4 {
         font-size:2rem;
@@ -39,6 +40,9 @@ body {
     }
     .pad-top-3rem {
         padding-top:3rem;
+    }
+    .pad-bottom-2rem {
+        padding-bottom:2rem;
     }
 }
 
@@ -116,7 +120,7 @@ body {
         h2 {
             padding-top:5px;
             color: #000000;
-            padding:0rem 1rem;
+            padding:0.5rem 1rem 0rem 1rem;
             margin:0px;
             text-align: center;
             line-height: 48px;
@@ -130,6 +134,7 @@ body {
             padding: 1.5rem 0rem 0rem 0rem;
             margin:0px;
             text-align: center;
+            line-height: 40px;
         }
         p {
             color: #ffffff;
@@ -165,8 +170,11 @@ body {
     
  }
 
- .introImage2 {
-    float:right;
+.introImage2Cont{
+    padding-left:7rem!important;
+    .introImage2 {
+        float:left;
+    }
 }
 
 .pinkBoxContainer{
@@ -212,11 +220,13 @@ body {
 
 .introContainer {
     .introCopy, h3{
-        padding: 0rem 2rem 0rem 2rem;
+        padding: 0rem 1.5rem 0rem 2rem;
     }  
     .ctaBoxCont {
         position: relative;
-        
+        a {
+            border-radius: 0;
+        }
         .ctaCopyContainer {
            position: absolute;
            padding-top: 3rem;
@@ -238,5 +248,22 @@ body {
         font-size:1.4rem;
         font-weight: bold;
         margin-bottom:0px;
+    }
+}
+
+ /* --------------- FOOTER STYLE -------------- */
+
+.footerContainer {
+    background-color:#000000;
+    padding:1rem 0rem 2rem 0rem;
+    p, a{
+        color:#ffffff;
+        line-height: 10px;
+    }
+    .termsCopy {
+        p{
+            font-size: 0.7rem;
+            text-align: center;
+        }
     }
 }
