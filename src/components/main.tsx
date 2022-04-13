@@ -13,6 +13,11 @@ const theme = createTheme({
       main: '#f44336',
     },
   },
+  typography: {
+    button: {
+      textTransform: 'none'
+    }
+  },
 });
 
 const MainSection = () => {
@@ -59,17 +64,17 @@ const MainSection = () => {
             <div className="yellowCopyYellowBox">
               <p>
                   The campaign's key objective is to change one piece of legislation or policy, or support<br></br>
-                  programming to promote youth participation in public life, in more than <u>80 countries<br></br>
-                  around the world</u> where The Body Shop operates.
+                  programming to promote youth participation in public life, in more than 80 countries<br></br>
+                  around the world where The Body Shop operates.
               </p>
             </div>
           </div>
         </div>
       </Container>
-      <Container className="pad-top-1rem" sx={{ maxWidth: '1440px;' }} maxWidth={false} disableGutters={true}>
+      <Container className="pad-top-3rem" sx={{ maxWidth: '1440px;' }} maxWidth={false} disableGutters={true}>
         <Grid container spacing={2} alignItems="center">
           <Grid item xs={7}>
-          <Container className="introContainer" sx={{ maxWidth: '685px;' }} maxWidth={false} disableGutters={true}>
+          <Container className="introContainer youngPeopleCont" sx={{ maxWidth: '775px;' }} maxWidth={false} disableGutters={true}>
             <h3>
               Young People’s Political<br></br>
               Participation
@@ -118,7 +123,11 @@ const MainSection = () => {
               To advance the needs and rights of young people, and ensure youth
               voices are meaningfully heard within public life and decision making, the
               Be Seen. Be Heard campaign is focused on supporting efforts that
-              promote policy and legislation change. 
+              promote policy and legislation change.
+              <br></br><br></br>
+              The Be Seen. Be Heard campaign further supports programming that develops
+              young people’s leadership skills; empowering the next generation of
+              changemakers through capacity building and training opportunities.
             </p>
           </Container>
           </Grid>
@@ -154,7 +163,7 @@ const MainSection = () => {
           </Grid>
       </Grid>
       </Container>
-      <Container className="pad-top-3rem" sx={{ maxWidth: '1225px;' }} maxWidth={false} disableGutters={true}>
+      <Container className="pad-top-4rem" sx={{ maxWidth: '1225px;' }} maxWidth={false} disableGutters={true}>
         <Grid container spacing={2} alignItems="center">
           
           <Grid item xs={4}>
@@ -237,7 +246,7 @@ const MainSection = () => {
         </Grid>
       </Container>
       <Container className="introContainer" sx={{ maxWidth: '1440px;' }} maxWidth={false} disableGutters={true}>
-        <div className="pad-top-3rem ctaBoxCont" style={{ placeItems: "center", display: "grid", }}>
+        <div className="pad-top-2rem ctaBoxCont" style={{ placeItems: "center", display: "grid", }}>
           <StaticImage
             className="introImage5"
             src="../images/introImage5.jpg"
@@ -253,19 +262,19 @@ const MainSection = () => {
               </p>
               <div className="" style={{ placeItems: "center", display: "grid", }}>
               <ThemeProvider theme={theme}>
-                <Button target="_blank" href="https://www.google.co.uk" variant="contained" color="primary" disableElevation>Read the full report</Button>
+                <Button target="_blank" href="https://www.google.co.uk" variant="contained" color="primary" disableElevation>Download the full report</Button>
               </ThemeProvider>
               </div>
               <div className="pad-top-1rem" style={{ placeItems: "center", display: "grid", }}>
               <ThemeProvider theme={theme}>
-                <Button target="_blank" href="https://www.google.co.uk" variant="contained" color="primary" disableElevation>Read the summary</Button>
+                <Button className="downloadButtonPadding" target="_blank" href="https://www.google.co.uk" variant="contained" color="primary" disableElevation>Download the summary</Button>
               </ThemeProvider>
               </div>
             </div>
           </div>
         </div>
       </Container>
-      <Container className="pad-top-3rem keyFindingsSection" sx={{ maxWidth: '1225px;' }} maxWidth={false} disableGutters={true}>
+      <Container className="pad-top-4rem keyFindingsSection" sx={{ maxWidth: '1000px;' }} maxWidth={false} disableGutters={true}>
         <Grid container spacing={2} alignItems="center">
           
           <Grid item xs={12}>
@@ -275,7 +284,7 @@ const MainSection = () => {
         <Grid container spacing={2} alignItems="top">
           
           <Grid item xs={5}>
-            <h5>The Office of the UN<br></br>
+            <h5>Office of the UN<br></br>
               Secretary-General’s Envoy on Youth
             </h5>
             <p>
@@ -293,20 +302,12 @@ const MainSection = () => {
               <br></br><br></br>
               For more information, follow @UNYouthEnvoy on social
               media and visit our website at <a href="https://www.un.org/youthenvoy/" target="_blank">un.org/youthenvoy.</a>
-              <div className="pad-top-2rem">
-              <StaticImage
-                className="unLogo"
-                src="../images/unLogo.png"
-                alt="Un Logo"
-                placeholder="blurred"
-              />
-              </div>
             </p>
           </Grid>
           <Grid item xs={1}></Grid>
           <Grid item xs={5}>
             <h5>
-              About The Body Shop
+              The Body Shop
             </h5>
             <p>
             At The Body Shop we seek to create change where and
@@ -321,7 +322,22 @@ const MainSection = () => {
             Campaigning for change is in our heritage. It’s what we
             do. Find out more by visiting <a href="https://www.thebodyshop.com/" target="_blank">thebodyshop.com.</a>
             </p>
-            <div className="pad-top-2rem">
+          </Grid>
+        </Grid>
+        <Grid container spacing={2} alignItems="top">
+          <Grid item xs={5}>
+              <div className="pad-top-2rem">
+              <StaticImage
+                className="unLogo"
+                src="../images/unLogo.png"
+                alt="Un Logo"
+                placeholder="blurred"
+              />
+              </div>
+          </Grid>
+          <Grid item xs={1}></Grid>
+          <Grid item xs={5}>
+            <div className="pad-top-1rem">
               <StaticImage
                 className="tbsLog"
                 src="../images/tbsLogo.png"

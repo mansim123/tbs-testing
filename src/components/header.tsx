@@ -6,7 +6,7 @@ import { StaticImage } from "gatsby-plugin-image";
 const HeaderSection = () => {
   return (
     <main>
-      <Container className="headerContainer" maxWidth={false}>
+      <Container className="headerContainer" maxWidth={false} sx={{ maxWidth: '1440px;' }}>
         <div
           style={{
             // This centers the other elements inside the hero component
