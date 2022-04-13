@@ -76,8 +76,8 @@ const MainSection = () => {
           <Grid item xs={7}>
           <Container className="introContainer youngPeopleCont" sx={{ maxWidth: '775px;' }} maxWidth={false} disableGutters={true}>
             <h3>
-              Young People’s Political<br></br>
-              Participation
+              Young people’s political<br></br>
+              participation
             </h3>
             <p className="introCopy">
               Too often, young people are misunderstood as being apathetic or uninterested in civic, social
@@ -116,8 +116,8 @@ const MainSection = () => {
           <Grid item xs={7}>
           <Container className="introContainer" sx={{ maxWidth: '680px;' }} maxWidth={false} disableGutters={true}>
           <h3>
-            What We Are<br></br>
-            Advocating For
+            What we are<br></br>
+            advocating for
             </h3>
             <p className="introCopy">
               To advance the needs and rights of young people, and ensure youth
@@ -140,7 +140,7 @@ const MainSection = () => {
           <Grid item xs={6}>
             <div className="mainPinkBox">
               <b>Lowering the voting age for local, municipal or national elections:</b><br></br>
-              enfranchising youth voters earlier by implementing comprehensive civic education programmes for youth.
+              enfranchising youth voters earlier by mobilizing and supporting youth advocacy efforts.
             </div>
           </Grid>
           <Grid className="" item xs={6}>
@@ -158,7 +158,7 @@ const MainSection = () => {
           <Grid className="" item xs={6}>
             <div className="mainPinkBox">
               <b>Amplifying young people's leadership in policy development: </b> 
-              ensuring there is a meaningful, accountable and long-term youth voice present in key policy-making spaces. 
+               ensuring there is a meaningful, accountable and long-term youth voice present in key policy-making spaces. 
             </div>
           </Grid>
       </Grid>
@@ -181,15 +181,15 @@ const MainSection = () => {
             </h3>
             <p className="introCopy">
               Did you know that 67% of people believe in a better future, with 15 to 17-year-olds
-              being the most optimistic? Or that more than two-thirds (69%) of people agree
-              political systems would be better if there were more opportunities for younger
-              people to have a say in policy development and change? 
+              being the most optimistic? Or that more than two-thirds (69%) of people agree political
+              systems would be better if there were more opportunities for younger people to have a
+              say in policy development and change?  
               <br></br><br></br>
-              The global youth report, Be Seen. Be Heard: Understanding Young People’s Political
-              Participation, unpacks the structural barriers young people face in accessing their
-              right to pollical participation and explores how we can all contribute to removing
-              such barriers. It examines the ways in which young people are already engaging
-              and contributing to our world, while also interrogating the basis for their exclusion. 
+              The Be Seen. Be Heard Global Youth Report, unpacks the structural barriers young people
+              face in accessing their right to pollical participation and explores how we can all
+              contribute to removing such barriers. It examines the ways in which young people are
+              already engaging and contributing to our world, while also interrogating the basis
+              for their exclusion. 
             </p>
           </Container>
           </Grid>
@@ -205,14 +205,15 @@ const MainSection = () => {
           </Grid>
           <Grid item xs={4}>
             <div className="mainCopyBlack">
-              <h1 className="secondStat">69%</h1>
+              <h1 className="thirdStat">8 in 10</h1>
             </div>
           </Grid>
           <Grid item xs={4}>
             <div className="mainCopyBlack">
-              <h1 className="thirdStat">8 in 10</h1>
+              <h1 className="secondStat">69%</h1>
             </div>
           </Grid>
+          
         </Grid>
         <Grid className="" container spacing={2} alignItems="top">
           <Grid item xs={4}>
@@ -226,6 +227,15 @@ const MainSection = () => {
           <Grid item xs={4}>
             <div className="mainCopyBlack">
               <p>
+                people think that current<br></br>
+                political systems need drastic<br></br>
+                reforms to be fit for the future.
+              </p>
+            </div>
+          </Grid>
+          <Grid item xs={4}>
+            <div className="mainCopyBlack">
+              <p>
                 of people think that more<br></br>
                 opportunities for younger<br></br>
                 people to have a say in policy<br></br>
@@ -234,15 +244,7 @@ const MainSection = () => {
               </p>
             </div>
           </Grid>
-          <Grid item xs={4}>
-            <div className="mainCopyBlack">
-              <p>
-                people think that current<br></br>
-                political systems need drastic<br></br>
-                reforms to be fit for the future.
-              </p>
-            </div>
-          </Grid>
+          
         </Grid>
       </Container>
       <Container className="introContainer" sx={{ maxWidth: '1440px;' }} maxWidth={false} disableGutters={true}>
@@ -300,7 +302,7 @@ const MainSection = () => {
               Youth also acts as the advisor to and the representative
               of the Secretary-General on youth related matters.
               <br></br><br></br>
-              For more information, follow @UNYouthEnvoy on social
+              For more information, follow <u>@UNYouthEnvoy</u> on social
               media and visit our website at <a href="https://www.un.org/youthenvoy/" target="_blank">un.org/youthenvoy.</a>
             </p>
           </Grid>
@@ -320,7 +322,7 @@ const MainSection = () => {
             Stop the Burning and Stop Sex Trafficking. 
             <br></br><br></br>
             Campaigning for change is in our heritage. It’s what we
-            do. Find out more by visiting <a href="https://www.thebodyshop.com/" target="_blank">thebodyshop.com.</a>
+            do. Find out more by visiting <a href="https://www.thebodyshop.com/" target="_blank">thebodyshop.com</a>.
             </p>
           </Grid>
         </Grid>

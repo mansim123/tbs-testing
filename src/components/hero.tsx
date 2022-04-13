@@ -70,8 +70,8 @@ const HeroSection = () => {
         <div style={{ placeItems: "center", display: "grid", }}>
             <div className="heroSubCopyContainer">
               <h3>
-                Young People Are Missing From Public Life,<br></br>
-                they need to Be Seen and Be Heard
+                Young people are missing from public life, <br></br>
+                they need to be seen and be heard
               </h3>
               <p>
               Every day, policy-makers around the world make important decisions about the future of our communities, countries and even our planet. Yet

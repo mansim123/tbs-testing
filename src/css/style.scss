@@ -98,6 +98,16 @@ body {
           display:block;
           margin:auto;
       }
+      .buttonCont {
+        position: absolute;
+        top: 0.5rem;
+        right: 2rem;
+      }
+      .translateButton {
+          border-radius: 0px;
+          border:1px solid;
+          padding: 0.25rem 0.6rem 0.25rem 1.1rem;
+      }
   }
 
   /* --------------- HERO STYLE -------------- */
@@ -138,7 +148,7 @@ body {
             padding: 1.5rem 0rem 0rem 0rem;
             margin:0px;
             text-align: center;
-            line-height: 40px;
+            line-height: 44px;
         }
         p {
             color: #ffffff;
@@ -245,9 +255,11 @@ body {
            padding-top: 3rem;
            .ctaCopyWhiteBox {
                background-color: #ffffff;
-               padding: 3rem 2.25rem;
+               padding: 2rem 2.25rem;
                p {
                    text-align: center;
+                   padding-top:0px;
+                   margin-top:0px;
                }
            }
           
