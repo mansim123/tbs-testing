@@ -25,6 +25,10 @@ const theme = createTheme({
   },
 });
 
+const whichLanguage:[value: string, language: string] = ["a","b"]
+
+console.log(whichLanguage);
+
 const options = [
   'Afrikaans',
   'Albanian',
@@ -153,11 +157,11 @@ export default function HeaderSection() {
                 },
               }}
             >
-              {options.map((option) => (
-                <MenuItem key={option} selected={option === 'Pyxis'} onClick={handleClose}>
-                  {option}
+              {/* {whichLanguage.map((whichLanguage) => (
+                <MenuItem key={whichLanguage[1]} selected={whichLanguage[1] === 'Pyxis'} onClick={handleClose}>
+                  {whichLanguage}
                 </MenuItem>
-              ))}
+              ))} */}
             </Menu>
           </div>
         </div>

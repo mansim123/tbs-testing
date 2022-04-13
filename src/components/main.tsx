@@ -186,7 +186,7 @@ const MainSection = () => {
               say in policy development and change?  
               <br></br><br></br>
               The Be Seen. Be Heard Global Youth Report, unpacks the structural barriers young people
-              face in accessing their right to pollical participation and explores how we can all
+              face in accessing their right to political participation and explores how we can all
               contribute to removing such barriers. It examines the ways in which young people are
               already engaging and contributing to our world, while also interrogating the basis
               for their exclusion. 
@@ -220,7 +220,7 @@ const MainSection = () => {
             <div className="mainCopyBlack">
                 <p>
                   of under 30s think politicians<br></br>
-                  don’t listen to young people.
+                  don’t listen to young people
                 </p>
             </div>
           </Grid>
@@ -229,7 +229,7 @@ const MainSection = () => {
               <p>
                 people think that current<br></br>
                 political systems need drastic<br></br>
-                reforms to be fit for the future.
+                reforms to be fit for the future
               </p>
             </div>
           </Grid>
@@ -240,7 +240,7 @@ const MainSection = () => {
                 opportunities for younger<br></br>
                 people to have a say in policy<br></br>
                 development would make<br></br>
-                political systems better.
+                political systems better
               </p>
             </div>
           </Grid>
