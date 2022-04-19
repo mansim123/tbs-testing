@@ -405,9 +405,9 @@ const MainSection = () => {
             </div>
           </Grid>
         </Grid>
-        <Grid container spacing={2} alignItems="top" className="hideMobile">
+        <Grid container spacing={2} alignItems="top">
           <Grid item xs={5}>
-              <div className="pad-top-2rem">
+              <div className="pad-top-2rem hideMobile">
               <StaticImage
                 className="unLogo"
                 src="../images/unLogo.png"
@@ -420,7 +420,7 @@ const MainSection = () => {
           <Grid item xs={5}>
             <div className="pad-top-1rem">
               <StaticImage
-                className="tbsLog"
+                className="tbsLog hideMobile"
                 src="../images/tbsLogo.png"
                 alt="tbs Logo"
                 placeholder="blurred"
