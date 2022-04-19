@@ -6,8 +6,8 @@ import IconButton from '@mui/material/IconButton';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-// import MoreVertIcon from '@mui/icons-material/MoreVert';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import Helmet from "react-helmet";
 
 const theme = createTheme({
   palette: {
@@ -25,9 +25,12 @@ const theme = createTheme({
   },
 });
 
-const whichLanguage:[value: string, language: string] = ["a","b"]
-
-console.log(whichLanguage);
+const whichLanguage = [
+  {
+      value: "en|af",
+      language: "code"
+  }
+]
 
 const options = [
   'Afrikaans',
@@ -89,21 +92,18 @@ const options = [
   'Yiddish',
 ];
 
-const ITEM_HEIGHT = 48;
+
 
 export default function HeaderSection() {
-  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
-  const open = Boolean(anchorEl);
-  const handleClick = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorEl(event.currentTarget);
-  };
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
 
   return (
     <main>
+      
       <Container className="headerContainer" maxWidth={false} sx={{ maxWidth: '1440px;' }}>
+      <Helmet>
+        <script type="text/javascript" src="http://free-website-translation.com/scripts/fwt.js" />
+      </Helmet>
+        
         <div
           style={{
             // This centers the other elements inside the hero component
@@ -120,55 +120,20 @@ export default function HeaderSection() {
             placeholder="blurred"
           />
           <div className="buttonCont">
-            <ThemeProvider theme={theme}>
-              <Button
-                className="translateButton"
-                id="composition-button"
-                variant="outlined"
-                aria-controls={open ? 'composition-menu' : undefined}
-                aria-expanded={open ? 'true' : undefined}
-                aria-haspopup="true"
-                onClick={handleClick}
-              >
-                Select language   <KeyboardArrowDownIcon />
-              </Button>
-            </ThemeProvider>
-            <Menu
-              id="long-menu"
-              className="windowExpanded"
-              MenuListProps={{
-                'aria-labelledby': 'long-button',
-              }}
-              anchorOrigin={{
-                vertical: 'bottom',
-                horizontal: 'right',
-              }}
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              anchorEl={anchorEl}
-              open={open}
-              onClose={handleClose}
-              PaperProps={{
-                style: {
-                  maxHeight: ITEM_HEIGHT * 4.5,
-                  width: '24ch',
-                },
-              }}
-            >
-              {/* {whichLanguage.map((whichLanguage) => (
-                <MenuItem key={whichLanguage[1]} selected={whichLanguage[1] === 'Pyxis'} onClick={handleClose}>
-                  {whichLanguage}
-                </MenuItem>
-              ))} */}
-            </Menu>
+          <a href="http://free-website-translation.com/" id="ftwtranslation_button">
+          <StaticImage 
+          src="http://free-website-translation.com/img/fwt_button_en.gif"
+          id="ftwtranslation_image"
+          alt="FWT Homepage Translator"
+          />
+          </a>   
           </div>
         </div>
 
       </Container>
     </main>
   );
-};
 
-// export default HeaderSection;
+    
+
+};

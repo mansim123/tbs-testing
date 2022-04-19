@@ -1,6 +1,6 @@
 import * as React from "react";
 import "../css/style.scss";
-import { Container, Button } from "@mui/material";
+import { Container, Button, Grid } from "@mui/material";
 import { StaticImage } from "gatsby-plugin-image";
 import { createTheme, ThemeProvider  } from '@mui/material/styles';
 
@@ -26,41 +26,71 @@ const HeroSection = () => {
       <Container className="heroContainer" maxWidth={false}>
         <div style={{ placeItems: "center", display: "grid", }}>
           <StaticImage
-            className="heroImage0"
+            className="heroImage0 hideMobile"
             src="../images/heroImage0.jpg"
+            alt="Hero Eyes"
+            placeholder="blurred"
+          />
+          <StaticImage
+            className="heroImage0 hideDesktop"
+            src="../images/heroImage0-m.jpg"
             alt="Hero Eyes"
             placeholder="blurred"
           />
         </div>
 
         <div style={{ placeItems: "center", display: "grid", }}>
-          <StaticImage
-            className="heroImageFiller"
+          {/* <StaticImage
+            className="heroImageFiller hideMobile"
             src="../images/heroImageFiller.jpg"
             alt="Background Fizz"
             placeholder="blurred"
-          />
-          <div className="heroCopyContainer">
-            <div className="heroCopyBlack">
-              <h1>Be Seen.Be Heard </h1>
-            </div>
-            <h2>
-              Promoting youth participation<br></br> and amplifying young
-              <br></br> voices in public life{" "}
-            </h2>
-            <div className="pad-top-1rem" style={{ placeItems: "center", display: "grid", }}>
-              <ThemeProvider theme={theme}>
-                <Button target="_blank" href="https://www.google.co.uk" variant="contained" color="primary" disableElevation>Download the full report</Button>
-              </ThemeProvider>
-              </div>
-          </div>
+          /> */}
+          {/* <StaticImage
+            className="heroImageFiller hideDesktop"
+            src="../images/heroImageFiller-m.jpg"
+            alt="Background Fizz"
+            placeholder="blurred"
+          /> */}
+          <Container className="heroCopyContainerBg" sx={{ maxWidth: '1440px;' }} maxWidth={false} disableGutters={true}>
+            <Container className="heroCopyContainer" sx={{ maxWidth: '830px;' }} maxWidth={false} disableGutters={true}>
+              <Grid container spacing={0} alignItems="center">
+                
+                <Grid item xs={12} sm={6}>
+                <div className="heroCopyBlack">
+                  <h1 className="heroCopyBlackLeft">Be Seen.</h1>
+                </div>
+                </Grid>
+                <Grid className="pad-top-05rem-mob" item xs={12} sm={6}>
+                <div className="heroCopyBlack">
+                  <h1 className="heroCopyBlackRight">Be Heard</h1>
+                </div>
+                </Grid>
+              </Grid>
+              <h2 className="">
+                Promoting youth participation<br className="hideMobile"></br> and amplifying young
+                <br className="hideMobile"></br> voices in public life{" "}
+              </h2>
+              <div className="pad-top-1rem removeDivCenterStyle pad-top-2rem-mob" style={{ placeItems: "center", display: "grid", }}>
+                <ThemeProvider theme={theme}>
+                  <Button className="heroButton" target="_blank" href="https://www.google.co.uk" variant="contained" color="primary" disableElevation>Download the full report</Button>
+                </ThemeProvider>
+                </div>
+            </Container>
+          </Container>
               
         </div>
 
         <div style={{ placeItems: "center", display: "grid", }}>
           <StaticImage
-            className="heroImage1"
+            className="heroImage1 hideMobile"
             src="../images/heroImage1.jpg"
+            alt="Hero Mouth"
+            placeholder="blurred"
+          />
+          <StaticImage
+            className="heroImage1 hideDesktop"
+            src="../images/heroImage1-m.jpg"
             alt="Hero Mouth"
             placeholder="blurred"
           />
@@ -70,7 +100,7 @@ const HeroSection = () => {
         <div style={{ placeItems: "center", display: "grid", }}>
             <div className="heroSubCopyContainer">
               <h3>
-                Young people are missing from public life, <br></br>
+                Young people are missing from public life, <br className="hideMobile"></br>
                 they need to be seen and be heard
               </h3>
               <p>

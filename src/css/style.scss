@@ -1,5 +1,8 @@
 // styles
 
+$breakpoint-mobile: 600px;
+$breakpoint-smallMobile: 480px;
+
 body {
     padding:0px;
     margin:0px;
@@ -47,6 +50,15 @@ body {
     .pad-bottom-2rem {
         padding-bottom:2rem;
     }
+    .pad-bottom-3rem {
+        padding-bottom:3rem;
+    }
+    .pad-top-none {
+        padding-top:0px!important;
+    }
+    .pad-top-20px {
+        padding-top:20px!important;
+    }
 }
 
 .pageStyles{
@@ -89,6 +101,28 @@ body {
         }
   }
 
+  .hideDesktop {
+      display:none!important;
+  }
+  .hideMobile {
+      display:inline-block!important;
+  }
+
+  @media (max-width: $breakpoint-mobile) {
+    .hideDesktop {
+        display:inline-block!important;
+    }
+    .hideMobile {
+        display:none!important;
+    }
+    h1,h2,h3,h4 {
+        text-align: left;
+    }
+    .remove-pad-top {
+        padding-top:0px!important;
+    }
+  }
+
   /* --------------- HEADER STYLE -------------- */
 
   .headerContainer {
@@ -110,6 +144,16 @@ body {
       }
   }
 
+
+
+  @media (max-width: $breakpoint-mobile) {
+
+    .headerContainer {
+        padding:2rem;
+    }
+    
+  }
+
   /* --------------- HERO STYLE -------------- */
 
   .heroContainer {
@@ -119,17 +163,27 @@ body {
         margin:auto;
     }
 
+    .heroCopyContainerBg {
+        background-image: url("../images/heroImageFiller-m.jpg");
+        padding:2rem;
+    }
     .heroCopyContainer {
-        position: absolute;
+        XXposition: absolute;
         .heroCopyBlack {
             background-color: #000000;
+            .heroCopyBlackLeft {
+                text-align: right;
+                padding:0rem 1rem;
+            }
+            .heroCopyBlackRight {
+                text-align: left;
+                padding:0rem 0rem;
+            }
         }
         h1 {
             color: #ffffff;
-            padding:0rem 1rem;
             line-height: 80px;
             margin:0px;
-            text-align: center;
         }
         h2 {
             padding-top:5px;
@@ -159,6 +213,145 @@ body {
     }
 }
 
+@media (max-width: $breakpoint-mobile) {
+
+    .heroContainer {
+        .removeDivCenterStyle {
+            display: inline-block!important;
+        }
+        .pad-top-2rem-mob {
+            padding-top:1.5rem;
+        }
+        padding-left:0px!important;
+        padding-right:0px!important;
+        .heroCopyContainer {
+            XXposition: absolute;
+            padding: 0rem 0rem;
+            .pad-top-05rem-mob {
+                padding-top:0.5rem;
+            }
+            h2 {
+                text-align: left;
+                padding:0.5rem 0rem 0rem 0rem;
+                font-size:4rem;
+                line-height:60px;
+            }
+            .heroCopyBlack {
+                h1 {
+                    font-size:5rem;
+                }
+                .heroCopyBlackLeft {
+                    text-align: left;
+                    padding:0rem 0.5rem;
+                }
+                .heroCopyBlackRight {
+                    text-align: left;
+                    padding:0rem 0.5rem;
+                }
+            }
+        }
+        .heroButton {
+            padding:0.5rem 1.5rem;
+            font-size:1.5rem;
+            float:left;
+        }
+        .heroSubCopyContainer {
+            padding:1rem 2rem 2rem 2rem!important;
+            h3{
+                font-size:3.2rem;
+                text-align: left;
+                line-height: 50px;
+            }
+            p{
+                padding:1.5rem 0 0.5rem 0;
+                text-align: left;
+                font-size:1.5rem;
+                line-height: 35px;
+            }
+        }
+    }
+
+}
+
+@media (max-width: $breakpoint-smallMobile) {
+    .heroContainer{
+        .heroCopyContainerBg{
+            padding:1.5rem 1rem 1.5rem 1.5rem;
+        }
+        .heroCopyContainer {
+            .heroCopyBlack  {
+                h1{
+                    font-size: 3.4rem;
+                }
+            }
+            h2 {
+                font-size: 2.6rem;
+                line-height: 50px;
+            }
+        }
+        .heroButton {
+            padding: 0.5rem 1.5rem;
+            font-size: 1rem;
+            float: left;
+        }
+    }
+
+    p {
+        font-size: 2rem!important;
+        line-height: 40px!important;
+    }
+
+    h3 {
+        font-size: 2rem!important;
+        line-height: 40px!important;
+    }
+    h4 {
+        font-size: 2rem!important;
+        line-height: 40px!important;
+    }
+    p {
+        font-size:1rem!important;
+        line-height: 20px!important;
+    }
+
+    .pinkBoxContainer{
+        .mainPinkBox {
+            font-size: 1.2rem!important;
+            padding: 2rem 2rem!important;
+        }
+    }
+
+    .ctaBoxCont{
+        .pinkButton{
+            padding: 0.5rem 1rem!important;
+            font-size: 1rem!important;
+        }
+        .downloadButtonPadding {
+            padding: 1rem 20px !important;
+        }
+    } 
+
+    .introContainer{
+        .ctaBoxCont{
+            .downloadButtonPadding {
+                padding: 0.5rem 19px!important;
+            }
+        } 
+
+    }
+
+    .statsContainer{
+        h1{
+            font-size:4rem!important;
+        }
+        .mainCopyBlack{
+            .thirdStat {
+                width: 100%!important;
+            }
+        }
+    }
+}
+
  /* --------------- MAIN STYLE -------------- */
 
  .introContainer {
@@ -167,10 +360,10 @@ body {
      }  
      .yellowBoxCont {
          position: relative;
-         
+         background-image: url("../images/introImage1.jpg");
          .yellowCopyContainer {
-            position: absolute;
-            padding-top: 3rem;
+            XXposition: absolute;
+            padding: 3rem;
             .yellowCopyYellowBox {
                 background-color: #d6ce4b;
                 padding: 3rem 5rem;
@@ -247,12 +440,14 @@ body {
     }  
     .ctaBoxCont {
         position: relative;
+        background-image: url("../images/introImage5.jpg");
+        padding:4rem;
         a {
             border-radius: 0;
         }
         .ctaCopyContainer {
-           position: absolute;
-           padding-top: 3rem;
+           XXposition: absolute;
+        //    padding-top: 3rem;
            .ctaCopyWhiteBox {
                background-color: #ffffff;
                padding: 2rem 2.25rem;
@@ -282,6 +477,178 @@ body {
     }
 }
 
+
+@media (max-width: $breakpoint-mobile) {
+
+    .introContainer {
+        .introCopy, h3 {
+            padding: 0rem 0rem 1.5rem 0rem;
+        }
+        .yellowBoxCont {
+            background-image: url("../images/introImage1-m.jpg");
+            padding:3rem 0rem;
+            .yellowCopyContainer {
+                XXposition: absolute;
+                padding: 4rem 0rem 0rem 0rem;
+                padding-top: 0rem;
+                width: 82%;
+                .yellowCopyYellowBox {
+                    padding: 1.2rem 1.4rem;
+                    p{
+                        font-size:1.5rem;
+                        line-height: 35px;
+                        margin:1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .introContainerMobile {
+        padding:1rem 2rem 1rem 2rem!important;
+        h3{
+            font-size:3.2rem;
+            text-align: left;
+            line-height: 50px;
+        }
+        p{
+            padding:1.5rem 0 0.5rem 0;
+            text-align: left;
+            font-size:1.5rem;
+            line-height: 35px;
+        }
+        
+    }
+
+    .youngPeopleCont {
+        padding: 3.5rem 1.5rem 1rem 1.5rem;
+        h3{
+            font-size:3.2rem;
+            text-align: left;
+            line-height: 50px;
+        }
+        p{
+            padding:1.5rem 0 0.5rem 0;
+            text-align: left;
+            font-size:1.5rem;
+            line-height: 35px;
+        }
+    }
+
+    .advoContainer {
+        
+        h3{
+            padding: 0.5rem 1.5rem 1rem 1.5rem;
+            font-size:3.2rem;
+            text-align: left;
+            line-height: 50px;
+        }
+        p{
+            padding: 0.5rem 1.5rem 1rem 1.5rem!important;
+            text-align: left;
+            font-size:1.5rem;
+            line-height: 35px;
+        }
+    }
+
+    .pinkBoxContainer {
+        padding: 0.5rem 1.5rem 1rem 1.5rem;
+        h4{
+            
+            font-size:3.2rem;
+            text-align: left;
+            line-height: 50px;
+        }
+        .mainPinkBox {
+            font-size:1.7rem;
+            padding: 4rem 2rem;
+        }
+    }
+
+    .globalYouthContainer {
+
+        h3{
+            padding: 0.5rem 1.5rem 1rem 1.5rem;
+            font-size:3.2rem;
+            text-align: left;
+            line-height: 50px;
+        }
+        p{
+            padding: 0.5rem 1.5rem 1rem 1.5rem!important;
+            text-align: left;
+            font-size:1.5rem;
+            line-height: 35px;
+        }
+    }
+
+    .statsContainer {
+        h4{
+            padding: 0.5rem 1.5rem 3rem 1.5rem;
+            font-size:3.2rem;
+            text-align: left;
+            line-height: 50px;
+        }
+        .mainCopyBlack {
+            .thirdStat {
+                width: 20rem!important;
+            }
+            p{
+                padding: 0.5rem 1.5rem 1rem 1.5rem!important;
+                font-size:2rem;
+                line-height: 35px;
+            }
+            
+        }
+    }
+
+    .ctaBoxCont {
+        padding:4rem 0rem!important;
+        background-image: url("../images/introImage5-m.jpg");
+        .ctaCopyContainer {
+            padding:0rem 2rem;
+        }
+        .ctaCopyWhiteBox {
+            padding: 3rem 0rem!important;
+        }
+        p{
+            padding: 0.5rem 1.5rem 1rem 1.5rem!important;
+            font-size:1.5rem;
+            line-height: 35px;
+        }
+        .pinkButton {
+            padding:0.5rem 1.5rem;
+            font-size:1.5rem;
+            float:left;
+        }
+        .downloadButtonPadding {
+            padding: 6px 28px!important;
+        }
+    }
+
+    .keyFindingsSection {
+        padding: 0.5rem 1.5rem 0rem 1.5rem;
+        h4{
+            padding: 0.5rem 0rem 0rem 0rem;
+            font-size:3.2rem;
+            text-align: left;
+            line-height: 50px;
+        }
+        h5{
+            padding: 0rem 0rem 0rem 0rem;
+            font-size:2.3rem;
+            text-align: left;
+            line-height: 45px;
+        }
+        p{
+            padding: 0.5rem 0rem 1rem 0rem!important;
+            text-align: left;
+            font-size:1.5rem;
+            line-height: 35px;
+        }
+    }
+
+}
+
  /* --------------- FOOTER STYLE -------------- */
 
 .footerContainer {
@@ -298,3 +665,21 @@ body {
         }
     }
 }
+
+@media (max-width: $breakpoint-mobile) {
+    .footerContainer {
+        padding: 0.5rem 1.5rem 2rem 1.5rem;
+        p{
+            font-size:1.5rem;
+            line-height: 25px;
+        }
+        .termsCopy {
+            p {
+                font-size: 1.1rem;
+                text-align: center;
+            }
+            
+        }
+    }
+}
+
