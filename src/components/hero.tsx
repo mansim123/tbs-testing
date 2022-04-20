@@ -56,12 +56,12 @@ const HeroSection = () => {
             <Container className="heroCopyContainer" sx={{ maxWidth: '830px;' }} maxWidth={false} disableGutters={true}>
               <Grid container spacing={0} alignItems="center">
                 
-                <Grid item xs={12} sm={6}>
+                <Grid item xs={12} sm={12} md={6}>
                 <div className="heroCopyBlack">
                   <h1 className="heroCopyBlackLeft">Be Seen.</h1>
                 </div>
                 </Grid>
-                <Grid className="pad-top-05rem-mob" item xs={12} sm={6}>
+                <Grid className="pad-top-05rem-mob" item xs={12} sm={12} md={6}>
                 <div className="heroCopyBlack">
                   <h1 className="heroCopyBlackRight">Be Heard</h1>
                 </div>
@@ -100,7 +100,7 @@ const HeroSection = () => {
         <div style={{ placeItems: "center", display: "grid", }}>
             <div className="heroSubCopyContainer">
               <h3>
-                Young people are missing from public life, <br className="hideMobile"></br>
+                Young people are missing from public life, <br className="hideMobile hideTablet"></br>
                 they need to be seen and be heard
               </h3>
               <p>

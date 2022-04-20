@@ -25,7 +25,7 @@ const MainSection = () => {
     <main>
       <Container className="introContainer" sx={{ maxWidth: '1440px;' }} maxWidth={false} disableGutters={true}>
         <Grid container spacing={2} justifyContent="center" alignItems="center" className="">
-          <Grid item xs={12} sm={7} order={{ xs: 2, sm: 1 }}>
+          <Grid item xs={12} sm={12} md={7} order={{ xs: 2, sm: 2, md:1 }}>
           <Container className="introContainer introContainerMobile" sx={{ maxWidth: '680px;' }} maxWidth={false} disableGutters={true}>
             <p className="introCopy">
               Young people have the right to be included in political decision-making. The Be
@@ -42,13 +42,15 @@ const MainSection = () => {
             </p>
           </Container>
           </Grid>
-          <Grid item xs={12} sm={5} order={{ xs: 1, sm: 2 }}>
+          <Grid item xs={12} sm={12} md={5} order={{ xs: 1, sm: 1, md:1 }}>
+          <div style={{ placeItems: "center", display: "grid", }}>
             <StaticImage
               className="introImage0"
               src="../images/introImage0.jpg"
               alt="Intro image"
               placeholder="blurred"
             />
+            </div>
           </Grid>
         </Grid>
       </Container>
@@ -69,18 +71,18 @@ const MainSection = () => {
           <div className="yellowCopyContainer">
             <div className="yellowCopyYellowBox">
               <p>
-                  The campaign's key objective is to change one piece of legislation or policy, or support<br className="hideMobile"></br>
-                  programming to promote youth participation in public life, in more than 80 countries<br className="hideMobile"></br>
+                  The campaign's key objective is to change one piece of legislation or policy, or support<br className="hideMobile hideTablet"></br>
+                  programming to promote youth participation in public life, in more than 80 countries<br className="hideMobile hideTablet"></br>
                   around the world where The Body Shop operates.
               </p>
             </div>
           </div>
         </div>
       </Container>
-      <Container className="pad-top-3rem" sx={{ maxWidth: '1440px;' }} maxWidth={false} disableGutters={true}>
+      <Container className="pad-top-3rem youngPeopleCont" sx={{ maxWidth: '1440px;' }} maxWidth={false} disableGutters={true}>
         <Grid container spacing={2} alignItems="center">
-        <Grid item xs={12} sm={7} order={{ xs: 2, sm: 1 }}>
-          <Container className="introContainer youngPeopleCont" sx={{ maxWidth: '775px;' }} maxWidth={false} disableGutters={true}>
+        <Grid item xs={12} sm={12} md={7} order={{ xs: 2, sm: 2, md:1 }}>
+        <Container className="introContainer introContainerMobile" sx={{ maxWidth: '680px;' }} maxWidth={false} disableGutters={true}>
             <h3>
               Young people’s political<br></br>
               participation
@@ -97,15 +99,17 @@ const MainSection = () => {
               structural and cultural barriers which prevent them from fulfilling their right to participate
               in public life.
             </p>
-          </Container>
+            </Container>
           </Grid>
-          <Grid item xs={12} sm={5} order={{ xs: 1, sm: 2 }}>
+          <Grid item xs={12} sm={12} md={5} order={{ xs: 1, sm: 1, md:1 }}>
+          <div className="" style={{ placeItems: "center", display: "grid", }}>
             <StaticImage
               className="introImage2 hideMobile"
               src="../images/introImage2.jpg"
               alt="Intro image 2"
               placeholder="blurred"
             />
+            </div>
             <div style={{ placeItems: "center", display: "grid", }}>
             <StaticImage
               className="introImage2 hideDesktop"
@@ -119,15 +123,17 @@ const MainSection = () => {
       </Container>
       <Container className="introContainer pad-top-2rem advoContainer" sx={{ maxWidth: '1440px;' }} maxWidth={false} disableGutters={true}>
         <Grid container spacing={2} justifyContent="center" alignItems="center">
-        <Grid item xs={12} sm={5}>
+        <Grid item xs={12} sm={12} md={5}>
+        <div style={{ placeItems: "center", display: "grid", }}>
             <StaticImage
               className="introImage0"
               src="../images/introImage3.jpg"
               alt="Intro image"
               placeholder="blurred"
             />
+            </div>
           </Grid>
-          <Grid item xs={12} sm={7}>
+          <Grid item xs={12} sm={12} md={7}>
           <Container className="introContainer" sx={{ maxWidth: '680px;' }} maxWidth={false} disableGutters={true}>
           <h3>
             What we are<br></br>
@@ -148,28 +154,28 @@ const MainSection = () => {
           
         </Grid>
       </Container>
-      <Container className="pinkBoxContainer pad-top-1rem" sx={{ maxWidth: '1080px;' }} maxWidth={false} disableGutters={true}>
+      <Container className="pinkBoxContainer pad-top-1rem" sx={{ maxWidth: '1150px;' }} maxWidth={false} disableGutters={true}>
           <h4>Key campaign actions include: </h4>
       <Grid container spacing={2} direction="row" justifyContent="center" alignItems="center">
-          <Grid item xs={12} sm={6}>
+          <Grid item xs={12} sm={12} md={6}>
             <div className="mainPinkBox">
               <b>Lowering the voting age for local, municipal or national elections:</b><br></br>
               enfranchising youth voters earlier by mobilizing and supporting youth advocacy efforts.
             </div>
           </Grid>
-          <Grid item xs={12} sm={6}>
+          <Grid item xs={12} sm={12} md={6}>
             <div className="mainPinkBox">
               <b>Removing systemic barriers for young people to participate in public life: </b> 
                challenging legal, social and cultural barriers that obstruct youth voting, candidacy or decision-making presence.
             </div>
           </Grid>
-          <Grid item xs={12} sm={6}>
+          <Grid item xs={12} sm={12} md={6}>
             <div className="mainPinkBox">
               <b>Increasing youth representation through the establishment and recognition of formal youth bodies: </b> 
                ensuring enhanced representation through youth councils, parliaments or committees.
             </div>
           </Grid>
-          <Grid item xs={12} sm={6}>
+          <Grid item xs={12} sm={12} md={6}>
             <div className="mainPinkBox">
               <b>Amplifying young people's leadership in policy development: </b> 
                ensuring there is a meaningful, accountable and long-term youth voice present in key policy-making spaces. 
@@ -180,13 +186,15 @@ const MainSection = () => {
       <Container className="pad-top-4rem globalYouthContainer" sx={{ maxWidth: '1225px;' }} maxWidth={false} disableGutters={true}>
         <Grid container spacing={2} alignItems="center">
           
-        <Grid item xs={12} sm={4}>
+        <Grid item xs={12} sm={12} md={4}>
+        <div style={{ placeItems: "center", display: "grid", }}>
             <StaticImage
               className="introImage4 hideMobile"
               src="../images/introImage4.jpg"
               alt="Intro image 4"
               placeholder="blurred"
             />
+            </div>
             <div style={{ placeItems: "center", display: "grid", }}>
               <StaticImage
                 className="introImage4 hideDesktop"
@@ -196,7 +204,7 @@ const MainSection = () => {
               />
             </div>
           </Grid>
-          <Grid item xs={12} sm={8}>
+          <Grid item xs={12} sm={12} md={8}>
           <Container className="introContainer" sx={{ maxWidth: '700px;' }} maxWidth={false} disableGutters={true}>
             <h3>
               Global Youth Report
@@ -218,9 +226,9 @@ const MainSection = () => {
         </Grid>
       </Container>
       <Container className="pad-top-3rem statsContainer" sx={{ maxWidth: '1275px;' }} maxWidth={false} disableGutters={true}>
-        <h4>Key findings: </h4>
-        <Grid className="pad-top-2rem" container spacing={2} alignItems="center">
-          <Grid className="pad-top-none" item xs={12} sm={4}>
+        <h4 className="pad-bottom-3rem">Key findings: </h4>
+        <Grid className="" container spacing={2} alignItems="center">
+          <Grid className="pad-top-none" item xs={12} sm={12} md={4}>
             <div className="mainCopyBlack" >
               <h1 className="firstStat">76%</h1>
               <p className="pad-bottom-3rem">
@@ -229,7 +237,7 @@ const MainSection = () => {
                 </p>
             </div>
           </Grid>
-          <Grid className="pad-top-20px" item xs={12} sm={4}>
+          <Grid className="pad-top-20px" item xs={12} sm={12} md={4}>
             <div className="mainCopyBlack">
               <h1 className="thirdStat">8 in 10</h1>
               <p className="pad-bottom-3rem">
@@ -239,7 +247,7 @@ const MainSection = () => {
               </p>
             </div>
           </Grid>
-          <Grid className="pad-top-20px" item xs={12} sm={4}>
+          <Grid className="pad-top-20px" item xs={12} sm={12} md={4}>
             <div className="mainCopyBlack">
               <h1 className="secondStat">69%</h1>
               <p>
@@ -320,8 +328,8 @@ const MainSection = () => {
           <div className="ctaCopyContainer">
             <div className="ctaCopyWhiteBox">
               <p>
-                Through substantiating the issue and offering concrete recommendations for policy and<br className="hideMobile"></br>
-                legislative improvements, the report provides a strong basis for local advocacy efforts<br className="hideMobile"></br>
+                Through substantiating the issue and offering concrete recommendations for policy and<br className="hideMobile hideTablet"></br>
+                legislative improvements, the report provides a strong basis for local advocacy efforts<br className="hideMobile hideTablet"></br>
                 which seek to defend and advance the needs and rights of young people in all their diversity. 
               </p>
               <div className="" style={{ placeItems: "center", display: "grid", }}>
@@ -338,7 +346,7 @@ const MainSection = () => {
           </div>
         </div>
       </Container>
-      <Container className="pad-top-4rem keyFindingsSection" sx={{ maxWidth: '1000px;' }} maxWidth={false} disableGutters={true}>
+      <Container className="pad-top-4rem keyFindingsSection" sx={{ maxWidth: '1060px;' }} maxWidth={false} disableGutters={true}>
         <Grid container spacing={2} alignItems="center">
           
           <Grid item xs={12}>

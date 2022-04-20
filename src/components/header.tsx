@@ -101,7 +101,7 @@ export default function HeaderSection() {
       
       <Container className="headerContainer" maxWidth={false} sx={{ maxWidth: '1440px;' }}>
       <Helmet>
-        <script type="text/javascript" src="http://free-website-translation.com/scripts/fwt.js" />
+        {/* <script type="text/javascript" src="http://free-website-translation.com/scripts/fwt.js" /> */}
       </Helmet>
         
         <div

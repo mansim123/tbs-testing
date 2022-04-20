@@ -1,5 +1,6 @@
 // styles
 
+$breakpoint-tablet: 900px;
 $breakpoint-mobile: 600px;
 $breakpoint-smallMobile: 480px;
 
@@ -108,6 +109,16 @@ body {
       display:inline-block!important;
   }
 
+  .hideTablet {
+    display:inline-block!important;
+   }
+
+  @media (max-width: $breakpoint-tablet) {
+    .hideTablet {
+        display:none!important;
+    }
+  }
+
   @media (max-width: $breakpoint-mobile) {
     .hideDesktop {
         display:inline-block!important;
@@ -157,7 +168,7 @@ body {
   /* --------------- HERO STYLE -------------- */
 
   .heroContainer {
-    padding:0rem 0rem;
+    padding:0px!important;
     .BeSeenBeHeard img{
         display:block;
         margin:auto;
@@ -213,6 +224,21 @@ body {
     }
 }
 
+@media (max-width: $breakpoint-tablet) {
+
+    .heroCopyContainer {
+        .heroCopyBlack {
+            .heroCopyBlackLeft {
+                text-align: center!important;
+            }
+            .heroCopyBlackRight {
+                text-align: center!important;;
+            }
+        }
+    }
+
+}
+
 @media (max-width: $breakpoint-mobile) {
 
     .heroContainer {
@@ -241,11 +267,11 @@ body {
                     font-size:5rem;
                 }
                 .heroCopyBlackLeft {
-                    text-align: left;
+                    text-align: left!important;
                     padding:0rem 0.5rem;
                 }
                 .heroCopyBlackRight {
-                    text-align: left;
+                    text-align: left!important;
                     padding:0rem 0.5rem;
                 }
             }
@@ -366,7 +392,7 @@ body {
             padding: 3rem;
             .yellowCopyYellowBox {
                 background-color: #d6ce4b;
-                padding: 3rem 5rem;
+                padding: 3rem 4rem;
                 p {
                     text-align: center;
                 }
@@ -378,7 +404,6 @@ body {
  }
 
 .youngPeopleCont {
-    padding-left:2.5rem;
     h3 {
         padding-top: 0px;
         margin-top: 0px;
@@ -393,6 +418,7 @@ body {
 }
 
 .pinkBoxContainer{
+    padding:2rem;
     .mainPinkBox{
         background-color: #ebbede;
         padding:2rem;
@@ -467,6 +493,7 @@ body {
 }
 
 .keyFindingsSection {
+    padding:2rem 2rem 0rem 2rem;
     h5 {
         font-size:1.4rem;
         font-weight: bold;
