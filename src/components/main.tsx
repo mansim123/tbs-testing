@@ -220,7 +220,7 @@ const MainSection = () => {
             <div className="mainCopyBlack" >
               <h1 className="firstStat">76%</h1>
               <p className="pad-bottom-3rem">
-                  of under 30s think politicians<br className="hideMobile"></br>
+                  of under 30s think politicians<br className="hideMobile"></br> 
                   don’t listen to young people
                 </p>
             </div>
@@ -229,8 +229,8 @@ const MainSection = () => {
             <div className="mainCopyBlack">
               <h1 className="thirdStat">8 in 10</h1>
               <p className="pad-bottom-3rem">
-                people think that current<br className="hideMobile"></br>
-                political systems need drastic<br className="hideMobile"></br>
+                people think that current<br className="hideMobile"></br> 
+                political systems need drastic<br className="hideMobile"></br> 
                 reforms to be fit for the future
               </p>
             </div>
@@ -239,10 +239,10 @@ const MainSection = () => {
             <div className="mainCopyBlack">
               <h1 className="secondStat">69%</h1>
               <p>
-                of people think that more<br className="hideMobile"></br>
-                opportunities for younger<br className="hideMobile"></br>
-                people to have a say in policy<br className="hideMobile"></br>
-                development would make<br className="hideMobile"></br>
+                of people think that more<br className="hideMobile"></br> 
+                opportunities for younger<br className="hideMobile"></br> 
+                people to have a say in policy<br className="hideMobile"></br> 
+                development would make<br className="hideMobile"></br> 
                 political systems better
               </p>
             </div>

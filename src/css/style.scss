@@ -357,9 +357,11 @@ body {
 
     .pinkBoxContainer{
         .mainPinkBox {
-            height:auto!important;
-            font-size: 1.2rem!important;
-            padding: 3rem 2rem!important;
+            background-color: #ebbede;
+            padding: 2rem 1.5rem 2rem 2rem;
+            height: 12.5rem;
+            font-size: 1.4rem;
+            margin-top: 20px;
         }
     }
 
@@ -437,10 +439,15 @@ body {
     padding:2rem;
     .mainPinkBox{
         background-color: #ebbede;
-        padding:3rem 1.5rem 0rem 2rem;
-        height:12.5rem;
-        font-size:1.4rem;
-        margin-top:20px;
+        // padding:2rem 1.5rem 2rem 2rem;
+        // height:auto;
+        // font-size:1.4rem;
+        // margin-top:20px;
+        // background-color: #ebbede;
+        padding: 2rem 1.5rem 2rem 2rem;
+        height: 12.5rem;
+        font-size: 1.4rem;
+        margin-top: 20px;
     }
     h3{
         padding:2rem 0rem 1rem 0rem;
@@ -459,6 +466,7 @@ body {
             width: 14rem;
             position: relative;
             margin: 0 auto;
+            line-height: 80px;
         }
 
         .thirdStat {
@@ -468,6 +476,7 @@ body {
             width: 20rem;
             position: relative;
             margin: 0 auto;
+            line-height: 80px;
         }
         p {
             margin-top:1rem;
@@ -542,13 +551,28 @@ body {
         .mainCopyBlack {
             p{
                 font-size:1.6rem;
-                padding-bottom:1rem;;
+                padding-bottom:1rem;
             }
         }
         
     }
+    .pinkBoxContainer {
+        padding: 0.5rem 1.5rem 1rem 1.5rem;
+        h3{
+            padding-top:0px;
+            font-size:3.2rem;
+            text-align: left;
+            line-height: 50px;
+        }
+        .mainPinkBox {
+            background-color: #ebbede;
+            padding: 2rem 1.5rem 2rem 2rem;
+            height: auto;
+            font-size: 1.4rem;
+            margin-top: 20px;
+        }
+    }
 }
-
 
 @media (max-width: $breakpoint-mobile) {
 
@@ -641,30 +665,16 @@ body {
         }
     }
 
-    .pinkBoxContainer {
-        padding: 0.5rem 1.5rem 1rem 1.5rem;
-        h3{
-            
-            font-size:3.2rem;
-            text-align: left;
-            line-height: 50px;
-        }
-        .mainPinkBox {
-            font-size:1.7rem;
-            padding: 4rem 2rem;
-        }
-    }
-
     .globalYouthContainer {
-
+            padding:0rem 1.5rem;
         h3{
-            padding: 0.5rem 1.5rem 1rem 1.5rem;
+            padding: 0.5rem 0rem 1rem 0rem;
             font-size:3.2rem;
             text-align: left;
             line-height: 50px;
         }
         p{
-            padding: 0.5rem 1.5rem 0rem 1.5rem!important;
+            padding: 0.5rem 0rem 0rem 0rem!important;
             margin-top:0px;
             text-align: left;
             font-size:1.5rem;
@@ -687,6 +697,7 @@ body {
                 padding: 0rem 1.5rem 0rem 1.5rem!important;
                 font-size:2rem;
                 line-height: 35px;
+                margin-top: 0.5rem;
             }
             
         }
