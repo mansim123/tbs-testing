@@ -207,6 +207,7 @@ body {
     }
 
     .heroSubCopyContainer {
+        padding:0rem 1.5rem;
         background-color: #000000;
         h3 {
             color: #ffffff;
@@ -262,6 +263,12 @@ body {
                 font-size:4rem;
                 line-height:60px;
             }
+            .blackLeft{
+                width:23rem;
+            }
+            .blackRight{
+                width:25rem;
+            }
             .heroCopyBlack {
                 h1 {
                     font-size:5rem;
@@ -305,6 +312,12 @@ body {
             padding:1.5rem 1rem 1.5rem 1.5rem;
         }
         .heroCopyContainer {
+            .blackLeft{
+                width:16.5rem;
+            }
+            .blackRight {
+                width:18rem;
+            }
             .heroCopyBlack  {
                 h1{
                     font-size: 3.4rem;
@@ -343,7 +356,7 @@ body {
     .pinkBoxContainer{
         .mainPinkBox {
             font-size: 1.2rem!important;
-            padding: 2rem 2rem!important;
+            padding: 3rem 2rem!important;
         }
     }
 
@@ -421,11 +434,12 @@ body {
     padding:2rem;
     .mainPinkBox{
         background-color: #ebbede;
-        padding:2rem;
+        padding:3rem 2rem;
         font-size:1.4rem;
+        margin-top:20px;
     }
-    h4{
-        padding:2rem 0rem;
+    h3{
+        padding:2rem 0rem 1rem 0rem;
     }
 }
 
@@ -509,7 +523,7 @@ body {
 
     .introContainer {
         .introCopy, h3 {
-            padding: 0rem 0rem 1.5rem 0rem;
+            padding: 0rem 0rem 0.5rem 0rem;
         }
         .yellowBoxCont {
             background-image: url("../images/introImage1-m.jpg");
@@ -531,8 +545,24 @@ body {
         }
     }
 
-    .introContainerMobile {
+    .introContainerMobile1 {
         padding:1rem 2rem 1rem 2rem!important;
+        h3{
+            font-size:3.2rem;
+            text-align: left;
+            line-height: 50px;
+        }
+        p{
+            padding:1.5rem 0 0.5rem 0;
+            text-align: left;
+            font-size:1.5rem;
+            line-height: 35px;
+        }
+        
+    }
+
+    .introContainerMobile2 {
+        padding:1rem 0rem 1rem 0rem!important;
         h3{
             font-size:3.2rem;
             text-align: left;
@@ -571,7 +601,8 @@ body {
             line-height: 50px;
         }
         p{
-            padding: 0.5rem 1.5rem 1rem 1.5rem!important;
+            padding: 0.5rem 1.5rem 0rem 1.5rem!important;
+            margin-top:0px;
             text-align: left;
             font-size:1.5rem;
             line-height: 35px;
@@ -580,7 +611,7 @@ body {
 
     .pinkBoxContainer {
         padding: 0.5rem 1.5rem 1rem 1.5rem;
-        h4{
+        h3{
             
             font-size:3.2rem;
             text-align: left;
@@ -601,7 +632,8 @@ body {
             line-height: 50px;
         }
         p{
-            padding: 0.5rem 1.5rem 1rem 1.5rem!important;
+            padding: 0.5rem 1.5rem 0rem 1.5rem!important;
+            margin-top:0px;
             text-align: left;
             font-size:1.5rem;
             line-height: 35px;
@@ -620,7 +652,7 @@ body {
                 width: 20rem!important;
             }
             p{
-                padding: 0.5rem 1.5rem 1rem 1.5rem!important;
+                padding: 0rem 1.5rem 0rem 1.5rem!important;
                 font-size:2rem;
                 line-height: 35px;
             }
@@ -635,10 +667,10 @@ body {
             padding:0rem 2rem;
         }
         .ctaCopyWhiteBox {
-            padding: 3rem 0rem!important;
+            padding: 1.5rem 0rem 2.5rem 0rem !important;
         }
         p{
-            padding: 0.5rem 1.5rem 1rem 1.5rem!important;
+            padding: 0.5rem 1.5rem 0rem 1.5rem!important;
             font-size:1.5rem;
             line-height: 35px;
         }
@@ -648,6 +680,7 @@ body {
             float:left;
         }
         .downloadButtonPadding {
+            margin-top:0.25rem;
             padding: 6px 28px!important;
         }
     }
@@ -667,6 +700,7 @@ body {
             line-height: 45px;
         }
         p{
+            margin-top:0.5rem;
             padding: 0.5rem 0rem 1rem 0rem!important;
             text-align: left;
             font-size:1.5rem;
@@ -689,6 +723,15 @@ body {
         p{
             font-size: 0.7rem;
             text-align: center;
+        }
+    }
+}
+
+@media (max-width: $breakpoint-tablet) {
+    .footerContainer {
+        
+        p{
+            font-size:0.9rem;
         }
     }
 }

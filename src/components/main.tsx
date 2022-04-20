@@ -26,7 +26,7 @@ const MainSection = () => {
       <Container className="introContainer" sx={{ maxWidth: '1440px;' }} maxWidth={false} disableGutters={true}>
         <Grid container spacing={2} justifyContent="center" alignItems="center" className="">
           <Grid item xs={12} sm={12} md={7} order={{ xs: 2, sm: 2, md:1 }}>
-          <Container className="introContainer introContainerMobile" sx={{ maxWidth: '680px;' }} maxWidth={false} disableGutters={true}>
+          <Container className="introContainer introContainerMobile1" sx={{ maxWidth: '680px;' }} maxWidth={false} disableGutters={true}>
             <p className="introCopy">
               Young people have the right to be included in political decision-making. The Be
               Seen. Be Heard campaign recognizes at its core that young people have a vital
@@ -56,18 +56,6 @@ const MainSection = () => {
       </Container>
       <Container className="introContainer pad-top-3rem remove-pad-top" sx={{ maxWidth: '1440px;' }} maxWidth={false} disableGutters={true}>
         <div className="yellowBoxCont" style={{ placeItems: "center", display: "grid", }}>
-          {/* <StaticImage
-            className="introImage1 hideMobile"
-            src="../images/introImage1.jpg"
-            alt="Intro image 1"
-            placeholder="blurred"
-          />
-          <StaticImage
-            className="introImage1 hideDesktop"
-            src="../images/introImage1-m.jpg"
-            alt="Intro image 1"
-            placeholder="blurred"
-          /> */}
           <div className="yellowCopyContainer">
             <div className="yellowCopyYellowBox">
               <p>
@@ -82,7 +70,7 @@ const MainSection = () => {
       <Container className="pad-top-3rem youngPeopleCont" sx={{ maxWidth: '1440px;' }} maxWidth={false} disableGutters={true}>
         <Grid container spacing={2} alignItems="center">
         <Grid item xs={12} sm={12} md={7} order={{ xs: 2, sm: 2, md:1 }}>
-        <Container className="introContainer introContainerMobile" sx={{ maxWidth: '680px;' }} maxWidth={false} disableGutters={true}>
+        <Container className="introContainer introContainerMobile2" sx={{ maxWidth: '680px;' }} maxWidth={false} disableGutters={true}>
             <h3>
               Young people’s political<br></br>
               participation
@@ -155,7 +143,7 @@ const MainSection = () => {
         </Grid>
       </Container>
       <Container className="pinkBoxContainer pad-top-1rem" sx={{ maxWidth: '1150px;' }} maxWidth={false} disableGutters={true}>
-          <h4>Key campaign actions include: </h4>
+          <h3>Key campaign actions include: </h3>
       <Grid container spacing={2} direction="row" justifyContent="center" alignItems="center">
           <Grid item xs={12} sm={12} md={6}>
             <div className="mainPinkBox">
@@ -232,7 +220,7 @@ const MainSection = () => {
             <div className="mainCopyBlack" >
               <h1 className="firstStat">76%</h1>
               <p className="pad-bottom-3rem">
-                  of under 30s think politicians<br></br>
+                  of under 30s think politicians<br className="hideMobile"></br>
                   don’t listen to young people
                 </p>
             </div>
@@ -241,8 +229,8 @@ const MainSection = () => {
             <div className="mainCopyBlack">
               <h1 className="thirdStat">8 in 10</h1>
               <p className="pad-bottom-3rem">
-                people think that current<br></br>
-                political systems need drastic<br></br>
+                people think that current<br className="hideMobile"></br>
+                political systems need drastic<br className="hideMobile"></br>
                 reforms to be fit for the future
               </p>
             </div>
@@ -251,80 +239,20 @@ const MainSection = () => {
             <div className="mainCopyBlack">
               <h1 className="secondStat">69%</h1>
               <p>
-                of people think that more<br></br>
-                opportunities for younger<br></br>
-                people to have a say in policy<br></br>
-                development would make<br></br>
+                of people think that more<br className="hideMobile"></br>
+                opportunities for younger<br className="hideMobile"></br>
+                people to have a say in policy<br className="hideMobile"></br>
+                development would make<br className="hideMobile"></br>
                 political systems better
               </p>
             </div>
           </Grid>
         </Grid>
       </Container>
-      {/* <Container className="pad-top-3rem statsContainer" sx={{ maxWidth: '1275px;' }} maxWidth={false} disableGutters={true}>
-        <h4>Key findings: </h4>
-        <Grid className="pad-top-2rem" container spacing={2} alignItems="center">
-          <Grid item xs={12} sm={4}>
-            <div className="mainCopyBlack">
-              <h1 className="firstStat">76%</h1>
-            </div>
-          </Grid>
-          <Grid item xs={12} sm={4}>
-            <div className="mainCopyBlack">
-              <h1 className="thirdStat">8 in 10</h1>
-            </div>
-          </Grid>
-          <Grid item xs={12} sm={4}>
-            <div className="mainCopyBlack">
-              <h1 className="secondStat">69%</h1>
-            </div>
-          </Grid>
-        </Grid>
-        <Grid className="" container spacing={2} alignItems="top">
-        <Grid item xs={12} sm={4}>
-            <div className="mainCopyBlack">
-                <p>
-                  of under 30s think politicians<br></br>
-                  don’t listen to young people
-                </p>
-            </div>
-          </Grid>
-          <Grid item xs={12} sm={4}>
-            <div className="mainCopyBlack">
-              <p>
-                people think that current<br></br>
-                political systems need drastic<br></br>
-                reforms to be fit for the future
-              </p>
-            </div>
-          </Grid>
-          <Grid item xs={12} sm={4}>
-            <div className="mainCopyBlack">
-              <p>
-                of people think that more<br></br>
-                opportunities for younger<br></br>
-                people to have a say in policy<br></br>
-                development would make<br></br>
-                political systems better
-              </p>
-            </div>
-          </Grid>
-        </Grid>
-      </Container> */}
-      <Container className="introContainer" sx={{ maxWidth: '1440px;' }} maxWidth={false} disableGutters={true}>
+
+      <Container className="introContainer pad-top-2rem" sx={{ maxWidth: '1440px;' }} maxWidth={false} disableGutters={true}>
         <div className="ctaBoxCont" style={{ placeItems: "center", display: "grid", }}>
-          {/* <StaticImage
-            className="introImage5 hideMobile"
-            src="../images/introImage5.jpg"
-            alt="Intro image 5"
-            placeholder="blurred"
-          />
-          <StaticImage
-            className="introImage5 hideDesktop"
-            src="../images/introImage5-m.jpg"
-            alt="Intro image 5"
-            placeholder="blurred"
-          /> */}
+         
           <div className="ctaCopyContainer">
             <div className="ctaCopyWhiteBox">
               <p>
@@ -376,7 +304,7 @@ const MainSection = () => {
               media and visit our website at <a href="https://www.un.org/youthenvoy/" target="_blank">un.org/youthenvoy.</a>
               
             </p>
-            <div className="pad-top-2rem hideDesktop">
+            <div className="hideDesktop">
                 <StaticImage
                   className="unLogo"
                   src="../images/unLogo-m.png"
@@ -403,7 +331,7 @@ const MainSection = () => {
             Campaigning for change is in our heritage. It’s what we
             do. Find out more by visiting <a href="https://www.thebodyshop.com/" target="_blank">thebodyshop.com</a>.
             </p>
-            <div className="pad-top-2rem hideDesktop">
+            <div className="hideDesktop">
                 <StaticImage
                   className="tbsLog"
                   src="../images/tbsLogo-m.png"

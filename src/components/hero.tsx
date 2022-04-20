@@ -57,12 +57,12 @@ const HeroSection = () => {
               <Grid container spacing={0} alignItems="center">
                 
                 <Grid item xs={12} sm={12} md={6}>
-                <div className="heroCopyBlack">
+                <div className="heroCopyBlack blackLeft">
                   <h1 className="heroCopyBlackLeft">Be Seen.</h1>
                 </div>
                 </Grid>
                 <Grid className="pad-top-05rem-mob" item xs={12} sm={12} md={6}>
-                <div className="heroCopyBlack">
+                <div className="heroCopyBlack blackRight">
                   <h1 className="heroCopyBlackRight">Be Heard</h1>
                 </div>
                 </Grid>
